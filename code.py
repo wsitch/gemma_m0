@@ -39,7 +39,7 @@ spi.configure(baudrate=baudrate,polarity=polarity,phase=phase)
 
 # check actual frequency
 baudrate_meas = spi.frequency
-print(f"actual bandwidth:{baudrate_meas}Hz")
+print(f"actual baudrate:{baudrate_meas}Hz")
 
 # issue initial latch/reset
 pixels = array.array("B", [0x80] * num_pixels * 3)
